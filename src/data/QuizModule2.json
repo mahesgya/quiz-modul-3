@@ -1,0 +1,392 @@
+[
+  {
+    "No": 1,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Dalam konteks modul ini, Artificial Intelligence (AI) adalah teknologi yang mampu:",
+    "Pilihan": [
+      "A. Menggantikan semua pekerjaan manusia",
+      "B. Melakukan tugas yang biasanya membutuhkan kecerdasan manusia",
+      "C. Mempercepat koneksi internet",
+      "D. Menghapus data secara otomatis"
+    ],
+    "Jawaban": "B. Melakukan tugas yang biasanya membutuhkan kecerdasan manusia.",
+    "Pembahasan": "AI adalah sistem komputer yang dapat melakukan tugas seperti memahami bahasa, mengenali pola, dan membuat prediksi."
+  },
+  {
+    "No": 2,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Mengapa data sangat penting dalam pengembangan AI?",
+    "Pilihan": [
+      "A. Karena AI belajar dari pola dalam data",
+      "B. Karena data membuat komputer lebih mahal",
+      "C. Karena data menggantikan manusia",
+      "D. Karena data mempercepat internet"
+    ],
+    "Jawaban": "A. Karena AI belajar dari pola dalam data.",
+    "Pembahasan": "Semakin banyak dan berkualitas data yang digunakan, semakin baik AI dalam mengenali pola."
+  },
+  {
+    "No": 3,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Machine Learning adalah metode AI yang memungkinkan sistem:",
+    "Pilihan": [
+      "A. Belajar dari data",
+      "B. Menghapus file lama",
+      "C. Mengganti pegawai",
+      "D. Mengatur jaringan internet"
+    ],
+    "Jawaban": "A. Belajar dari data.",
+    "Pembahasan": "Machine Learning memungkinkan komputer mempelajari pola dari data tanpa diprogram secara detail."
+  },
+  {
+    "No": 4,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Deep Learning merupakan bagian dari:",
+    "Pilihan": [
+      "A. Machine Learning",
+      "B. Database",
+      "C. Internet",
+      "D. Hardware komputer"
+    ],
+    "Jawaban": "A. Machine Learning.",
+    "Pembahasan": "Deep Learning adalah teknik dalam Machine Learning yang menggunakan jaringan saraf tiruan."
+  },
+  {
+    "No": 5,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Generative AI adalah jenis AI yang dapat:",
+    "Pilihan": [
+      "A. Membuat konten baru seperti teks atau gambar",
+      "B. Menghapus data server",
+      "C. Memperbaiki komputer rusak",
+      "D. Mengganti kebijakan pemerintah"
+    ],
+    "Jawaban": "A. Membuat konten baru seperti teks atau gambar.",
+    "Pembahasan": "Contoh Generative AI adalah ChatGPT yang mampu membuat teks atau ringkasan."
+  },
+  {
+    "No": 6,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Sistem rekomendasi film di Netflix adalah contoh penggunaan:",
+    "Pilihan": [
+      "A. Artificial Intelligence",
+      "B. Sistem manual",
+      "C. Internet biasa",
+      "D. Spreadsheet"
+    ],
+    "Jawaban": "A. Artificial Intelligence.",
+    "Pembahasan": "AI digunakan untuk mempelajari preferensi pengguna dan memberikan rekomendasi."
+  },
+  {
+    "No": 7,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Artificial Intelligence mulai dikembangkan sejak:",
+    "Pilihan": [
+      "A. 1950-an",
+      "B. 1980-an",
+      "C. 2000-an",
+      "D. 2015"
+    ],
+    "Jawaban": "A. 1950-an.",
+    "Pembahasan": "Penelitian AI sudah dimulai sejak tahun 1950-an."
+  },
+  {
+    "No": 8,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "AI tidak benar-benar berpikir seperti manusia, tetapi bekerja dengan cara:",
+    "Pilihan": [
+      "A. Meniru emosi manusia",
+      "B. Mempelajari pola data",
+      "C. Menghafal semua data",
+      "D. Menggunakan insting"
+    ],
+    "Jawaban": "B. Mempelajari pola data.",
+    "Pembahasan": "AI menggunakan algoritma untuk mengenali pola dalam data."
+  },
+  {
+    "No": 9,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Aplikasi penerjemah bahasa otomatis merupakan contoh AI dalam bidang:",
+    "Pilihan": [
+      "A. Pemahaman bahasa",
+      "B. Pengolahan gambar",
+      "C. Pengolahan angka",
+      "D. Pengolahan suara"
+    ],
+    "Jawaban": "A. Pemahaman bahasa.",
+    "Pembahasan": "AI yang memahami bahasa manusia disebut Natural Language Processing."
+  },
+  {
+    "No": 10,
+    "Topik": "Dasar AI",
+    "Pertanyaan": "Memahami jenis-jenis AI penting agar kita:",
+    "Pilihan": [
+      "A. Mengerti cara AI bekerja",
+      "B. Mengetahui harga komputer",
+      "C. Mengetahui lokasi server",
+      "D. Mengetahui pembuat AI"
+    ],
+    "Jawaban": "A. Mengerti cara AI bekerja.",
+    "Pembahasan": "Dengan memahami jenis AI kita dapat mengetahui bagaimana sistem memproses data."
+  },
+  {
+    "No": 11,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Literasi AI bagi ASN berarti kemampuan untuk:",
+    "Pilihan": [
+      "A. Menghindari teknologi",
+      "B. Memahami dan menggunakan AI secara bijak",
+      "C. Membuat robot sendiri",
+      "D. Memperbaiki komputer"
+    ],
+    "Jawaban": "B. Memahami dan menggunakan AI secara bijak.",
+    "Pembahasan": "Literasi AI mencakup pemahaman teknologi, etika, dan risiko penggunaan AI."
+  },
+  {
+    "No": 12,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Ketika menerima hasil dari sistem AI, ASN sebaiknya:",
+    "Pilihan": [
+      "A. Langsung mempercayainya",
+      "B. Mengevaluasi apakah hasilnya masuk akal",
+      "C. Menghapusnya",
+      "D. Mengabaikannya"
+    ],
+    "Jawaban": "B. Mengevaluasi apakah hasilnya masuk akal.",
+    "Pembahasan": "Output AI perlu ditinjau kembali karena tidak selalu benar."
+  },
+  {
+    "No": 13,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Menjadi pengguna aktif AI berarti ASN:",
+    "Pilihan": [
+      "A. Hanya menerima hasil AI",
+      "B. Memahami kegunaan dan batasan AI",
+      "C. Menolak teknologi",
+      "D. Harus bisa membuat AI"
+    ],
+    "Jawaban": "B. Memahami kegunaan dan batasan AI.",
+    "Pembahasan": "Pengguna aktif memahami kapan AI digunakan dan apa batasannya."
+  },
+  {
+    "No": 14,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "AI unggul dalam:",
+    "Pilihan": [
+      "A. Memproses data besar dengan cepat",
+      "B. Memiliki empati",
+      "C. Memahami nilai budaya",
+      "D. Membuat keputusan etis"
+    ],
+    "Jawaban": "A. Memproses data besar dengan cepat.",
+    "Pembahasan": "Keunggulan AI adalah kecepatan dalam menganalisis data besar."
+  },
+  {
+    "No": 15,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Kemampuan memahami kualitas dan sumber data disebut:",
+    "Pilihan": [
+      "A. Literasi Data",
+      "B. Literasi Bahasa",
+      "C. Literasi Budaya",
+      "D. Literasi Politik"
+    ],
+    "Jawaban": "A. Literasi Data.",
+    "Pembahasan": "Literasi data membantu memastikan data yang digunakan berkualitas."
+  },
+  {
+    "No": 16,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Output AI tidak boleh dianggap sebagai:",
+    "Pilihan": [
+      "A. Rekomendasi",
+      "B. Informasi awal",
+      "C. Kebenaran mutlak",
+      "D. Bahan pertimbangan"
+    ],
+    "Jawaban": "C. Kebenaran mutlak.",
+    "Pembahasan": "Output AI tetap perlu dievaluasi oleh manusia."
+  },
+  {
+    "No": 17,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Kesadaran terhadap keamanan data dan privasi termasuk dalam:",
+    "Pilihan": [
+      "A. Literasi Digital",
+      "B. Literasi Budaya",
+      "C. Literasi Bahasa",
+      "D. Literasi Seni"
+    ],
+    "Jawaban": "A. Literasi Digital.",
+    "Pembahasan": "Literasi digital mencakup keamanan siber dan perlindungan data."
+  },
+  {
+    "No": 18,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Literasi komputasi membantu ASN memahami:",
+    "Pilihan": [
+      "A. Cara algoritma bekerja",
+      "B. Harga komputer",
+      "C. Cara merakit server",
+      "D. Cara memperbaiki printer"
+    ],
+    "Jawaban": "A. Cara algoritma bekerja.",
+    "Pembahasan": "ASN perlu memahami logika dasar AI walaupun tidak harus bisa coding."
+  },
+  {
+    "No": 19,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Jika data yang digunakan AI bias, maka kemungkinan:",
+    "Pilihan": [
+      "A. Hasil AI juga bias",
+      "B. AI berhenti bekerja",
+      "C. AI menghapus data",
+      "D. AI menjadi lebih cepat"
+    ],
+    "Jawaban": "A. Hasil AI juga bias.",
+    "Pembahasan": "Bias data dapat menghasilkan keputusan yang tidak adil."
+  },
+  {
+    "No": 20,
+    "Topik": "Literasi AI",
+    "Pertanyaan": "Menghindari bias dalam AI penting agar pelayanan publik:",
+    "Pilihan": [
+      "A. Lebih cepat saja",
+      "B. Lebih adil bagi masyarakat",
+      "C. Lebih murah",
+      "D. Lebih sederhana"
+    ],
+    "Jawaban": "B. Lebih adil bagi masyarakat.",
+    "Pembahasan": "AI yang bias dapat menyebabkan ketidakadilan dalam pelayanan publik."
+  },
+  {
+    "No": 21,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "Digital mindset adalah pola pikir yang:",
+    "Pilihan": [
+      "A. Menolak perubahan teknologi",
+      "B. Terbuka terhadap inovasi teknologi",
+      "C. Menghindari komputer",
+      "D. Hanya fokus pada pekerjaan manual"
+    ],
+    "Jawaban": "B. Terbuka terhadap inovasi teknologi.",
+    "Pembahasan": "Digital mindset membuat ASN siap beradaptasi dengan teknologi baru."
+  },
+  {
+    "No": 22,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "AI dapat membantu ASN dengan cara:",
+    "Pilihan": [
+      "A. Menggantikan seluruh pekerjaan",
+      "B. Mengurangi pekerjaan rutin",
+      "C. Menghapus data masyarakat",
+      "D. Menghilangkan rapat"
+    ],
+    "Jawaban": "B. Mengurangi pekerjaan rutin.",
+    "Pembahasan": "AI membantu mengotomatisasi pekerjaan administratif yang berulang."
+  },
+  {
+    "No": 23,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "Keputusan akhir dalam pelayanan publik tetap harus diambil oleh:",
+    "Pilihan": [
+      "A. AI",
+      "B. Sistem komputer",
+      "C. Manusia (ASN)",
+      "D. Internet"
+    ],
+    "Jawaban": "C. Manusia (ASN).",
+    "Pembahasan": "AI hanya memberikan rekomendasi, keputusan tetap pada manusia."
+  },
+  {
+    "No": 24,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "Dalam pemerintahan, AI berperan sebagai:",
+    "Pilihan": [
+      "A. Pengganti ASN",
+      "B. Sistem pendukung keputusan",
+      "C. Mesin pencetak dokumen",
+      "D. Alat hiburan"
+    ],
+    "Jawaban": "B. Sistem pendukung keputusan.",
+    "Pembahasan": "AI membantu memberikan analisis untuk mendukung pengambilan keputusan."
+  },
+  {
+    "No": 25,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "Salah satu manfaat AI dalam pemerintahan adalah:",
+    "Pilihan": [
+      "A. Mempercepat analisis data kebijakan",
+      "B. Menghapus kebijakan",
+      "C. Mengurangi pegawai",
+      "D. Menghilangkan rapat"
+    ],
+    "Jawaban": "A. Mempercepat analisis data kebijakan.",
+    "Pembahasan": "AI mampu menganalisis data lebih cepat dibandingkan cara manual."
+  },
+  {
+    "No": 26,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "ASN yang adaptif terhadap teknologi akan:",
+    "Pilihan": [
+      "A. Menolak sistem baru",
+      "B. Belajar menggunakan teknologi baru",
+      "C. Menghindari komputer",
+      "D. Kembali ke sistem manual"
+    ],
+    "Jawaban": "B. Belajar menggunakan teknologi baru.",
+    "Pembahasan": "Sikap adaptif penting dalam transformasi digital."
+  },
+  {
+    "No": 27,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "AI dapat meningkatkan efisiensi birokrasi melalui:",
+    "Pilihan": [
+      "A. Otomatisasi proses administrasi",
+      "B. Menambah pekerjaan",
+      "C. Menghapus arsip",
+      "D. Mengganti pimpinan"
+    ],
+    "Jawaban": "A. Otomatisasi proses administrasi.",
+    "Pembahasan": "Otomatisasi mempercepat proses administrasi."
+  },
+  {
+    "No": 28,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "Transformasi digital bertujuan untuk menciptakan layanan publik yang:",
+    "Pilihan": [
+      "A. Lambat tapi pasti",
+      "B. Efektif dan responsif",
+      "C. Rumit",
+      "D. Manual"
+    ],
+    "Jawaban": "B. Efektif dan responsif.",
+    "Pembahasan": "Teknologi digunakan untuk meningkatkan kualitas pelayanan publik."
+  },
+  {
+    "No": 29,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "Kolaborasi manusia dan AI akan menghasilkan pelayanan yang:",
+    "Pilihan": [
+      "A. Berbasis data",
+      "B. Berbasis tebakan",
+      "C. Lebih lambat",
+      "D. Lebih mahal"
+    ],
+    "Jawaban": "A. Berbasis data.",
+    "Pembahasan": "AI membantu analisis data sehingga keputusan lebih tepat."
+  },
+  {
+    "No": 30,
+    "Topik": "Digital Mindset",
+    "Pertanyaan": "Transformasi digital dalam birokrasi bukan hanya soal teknologi, tetapi juga perubahan:",
+    "Pilihan": [
+      "A. Warna kantor",
+      "B. Pola pikir dan cara kerja",
+      "C. Jumlah komputer",
+      "D. Lokasi server"
+    ],
+    "Jawaban": "B. Pola pikir dan cara kerja.",
+    "Pembahasan": "Transformasi digital memerlukan perubahan paradigma kerja."
+  }
+]
