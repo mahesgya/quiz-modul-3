@@ -71,7 +71,7 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
               const isOptionSelected = option === selectedOption;
               
               if (isOptionCorrect) {
-                optionStateClass = "bg-primary/20 border-primary text-primary-foreground font-semibold shadow-sm ring-1 ring-primary";
+                optionStateClass = "bg-green-50 border-green-500 text-green-900 font-semibold shadow-sm ring-1 ring-green-400";
               } else if (isOptionSelected && !isOptionCorrect) {
                 optionStateClass = "bg-destructive/10 border-destructive text-destructive-foreground opacity-90";
               } else {
@@ -89,7 +89,7 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
                 className={`w-full text-left p-3 md:p-4 rounded-lg border flex items-start gap-2 md:gap-3 transition-all ${optionStateClass}`}
               >
                 <div className="mt-0.5 md:mt-1 flex-shrink-0">
-                  {isAnswered && option.startsWith(correctAnswerLetter) && <CheckCircle2 className="w-5 h-5 text-primary" />}
+                  {isAnswered && option.startsWith(correctAnswerLetter) && <CheckCircle2 className="w-5 h-5 text-green-500" />}
                   {isAnswered && option === selectedOption && !option.startsWith(correctAnswerLetter) && <XCircle className="w-5 h-5 text-destructive" />}
                   {!isAnswered && option === selectedOption && <div className="w-4 h-4 md:w-5 md:h-5 rounded-full border-[3px] md:border-4 border-primary" />}
                   {!isAnswered && option !== selectedOption && <div className="w-4 h-4 md:w-5 md:h-5 rounded-full border-2 border-muted-foreground/30" />}
@@ -111,14 +111,14 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
             </Button>
           ) : (
             <div className="w-full space-y-4 animate-in slide-in-from-top-2 fade-in duration-300">
-              <div className={`p-4 rounded-lg flex gap-3 ${isSelectedCorrect ? 'bg-primary/10 border border-primary/20' : 'bg-destructive/10 border border-destructive/20'}`}>
+              <div className={`p-4 rounded-lg flex gap-3 ${isSelectedCorrect ? 'bg-green-50 border border-green-200' : 'bg-destructive/10 border border-destructive/20'}`}>
                 {isSelectedCorrect ? (
-                  <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
+                  <CheckCircle2 className="w-6 h-6 text-green-500 flex-shrink-0" />
                 ) : (
                   <AlertCircle className="w-6 h-6 text-destructive flex-shrink-0" />
                 )}
                 <div className="space-y-2">
-                  <h4 className={`poppins font-semibold ${isSelectedCorrect ? 'text-primary' : 'text-destructive'}`}>
+                  <h4 className={`poppins font-semibold ${isSelectedCorrect ? 'text-green-600' : 'text-destructive'}`}>
                     {isSelectedCorrect ? 'Jawaban Benar!' : 'Jawaban Kurang Tepat'}
                   </h4>
                   <div className="text-sm text-foreground/90 space-y-1">
