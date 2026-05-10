@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { google } from 'googleapis';
+import { JWT } from 'google-auth-library';
 
 export async function POST(request: NextRequest) {
   try {
@@ -8,14 +9,18 @@ export async function POST(request: NextRequest) {
 
     const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID;
     const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
-    const privateKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n');
+    const rawKey = process.env.GOOGLE_PRIVATE_KEY;
 
-    if (!spreadsheetId || !clientEmail || !privateKey) {
+    if (!spreadsheetId || !clientEmail || !rawKey) {
       return NextResponse.json({ error: 'Google Sheets credentials not configured' }, { status: 500 });
     }
 
-    const auth = new google.auth.GoogleAuth({
-      credentials: { client_email: clientEmail, private_key: privateKey },
+    // Handle both escaped \n (from .env.local) and real newlines (from Vercel dashboard)
+    const privateKey = rawKey.includes('\\n') ? rawKey.replace(/\\n/g, '\n') : rawKey;
+
+    const auth = new JWT({
+      email: clientEmail,
+      key: privateKey,
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
