@@ -1,5 +1,5 @@
 import type { Question } from '@/types';
-import quizModule2Raw from './QuizModule2.json';
+import quizModule1Raw from './QuizModule1.json';
 import quizModule3Raw from './QuizModule3.json';
 
 export interface ModuleConfig {
@@ -11,12 +11,12 @@ export interface ModuleConfig {
 }
 
 export const MODULES: Record<string, ModuleConfig> = {
-  '2': {
-    id: '2',
-    label: 'Modul 2',
+  '1': {
+    id: '1',
+    label: 'Modul 1',
     title: 'Dasar AI, Literasi AI & Digital Mindset',
     description: 'Pengenalan konsep dasar kecerdasan buatan, literasi AI, dan pola pikir digital.',
-    questions: quizModule2Raw as Question[],
+    questions: quizModule1Raw as Question[],
   },
   '3': {
     id: '3',
