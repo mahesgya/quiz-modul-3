@@ -14,7 +14,7 @@ export const MODULES: Record<string, ModuleConfig> = {
   '1': {
     id: '1',
     label: 'Modul 1',
-    title: 'Dasar AI, Literasi AI & Digital Mindset',
+    title: 'Literasi Digital dan Pola Pikir AI',
     description: 'Pengenalan konsep dasar kecerdasan buatan, literasi AI, dan pola pikir digital.',
     questions: quizModule1Raw as Question[],
   },
