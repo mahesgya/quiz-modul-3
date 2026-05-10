@@ -6,31 +6,31 @@
   :root {
     --background: 226 20% 98%;
     --foreground: 226 20% 10%;
-    
+
     /* IPB Navy Blue shades */
     --primary: 226 68% 27%;
     --primary-foreground: 226 20% 98%;
-    
+
     /* Yellow/Accent shades */
     --accent: 51 95% 54%;
     --accent-foreground: 226 68% 27%;
 
     --secondary: 226 20% 90%;
     --secondary-foreground: 226 68% 27%;
-    
+
     --muted: 226 10% 90%;
     --muted-foreground: 226 10% 40%;
-    
+
     --popover: 226 20% 98%;
     --popover-foreground: 226 20% 10%;
-    
+
     --card: 0 0% 100%;
     --card-foreground: 226 20% 10%;
-    
+
     --border: 226 10% 85%;
     --input: 226 10% 85%;
     --ring: 226 68% 27%;
-    
+
     --radius: 0.5rem;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -39,69 +39,24 @@
   .dark {
     --background: 226 20% 10%;
     --foreground: 226 20% 98%;
-    
-    /* IPB Navy Blue shades */
     --primary: 226 68% 27%;
     --primary-foreground: 226 20% 98%;
-    
-    /* Yellow/Accent shades */
     --accent: 51 95% 54%;
     --accent-foreground: 226 68% 27%;
-
     --secondary: 226 20% 15%;
     --secondary-foreground: 226 35% 90%;
-    
     --muted: 226 10% 15%;
     --muted-foreground: 226 10% 60%;
-    
     --popover: 226 20% 10%;
     --popover-foreground: 226 20% 98%;
-    
     --card: 226 20% 12%;
     --card-foreground: 226 20% 98%;
-    
     --border: 226 10% 20%;
     --input: 226 10% 20%;
     --ring: 226 68% 27%;
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
   }
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("/node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff2") format("woff2"), 
-       url("/node_modules/@fontsource/poppins/files/poppins-latin-400-normal.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("/node_modules/@fontsource/poppins/files/poppins-latin-500-normal.woff2") format("woff2"), 
-       url("/node_modules/@fontsource/poppins/files/poppins-latin-500-normal.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("/node_modules/@fontsource/poppins/files/poppins-latin-600-normal.woff2") format("woff2"), 
-       url("/node_modules/@fontsource/poppins/files/poppins-latin-600-normal.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("/node_modules/@fontsource/poppins/files/poppins-latin-700-normal.woff2") format("woff2"), 
-       url("/node_modules/@fontsource/poppins/files/poppins-latin-700-normal.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url("/node_modules/@fontsource/poppins/files/poppins-latin-900-normal.woff2") format("woff2"), 
-       url("/node_modules/@fontsource/poppins/files/poppins-latin-900-normal.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
 }
 
 .poppins {
