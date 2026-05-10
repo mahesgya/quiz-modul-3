@@ -1,12 +1,14 @@
+'use client';
+
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useRouter } from 'next/navigation';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { BookOpen, ChevronRight } from 'lucide-react';
 import { MODULES } from '@/data/modules';
 
 export const ModuleSelectScreen: React.FC = () => {
-  const navigate = useNavigate();
+  const router = useRouter();
 
   return (
     <div className="w-full max-w-2xl mx-auto mt-8 space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
@@ -23,7 +25,7 @@ export const ModuleSelectScreen: React.FC = () => {
           <Card
             key={mod.id}
             className="border-l-4 border-l-primary shadow-md hover:shadow-lg transition-all cursor-pointer group"
-            onClick={() => navigate(`/quiz/${mod.id}`)}
+            onClick={() => router.push(`/quiz/${mod.id}`)}
           >
             <CardHeader className="pb-2">
               <div className="flex items-center justify-between">
