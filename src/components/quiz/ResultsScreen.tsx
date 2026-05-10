@@ -1,7 +1,9 @@
+'use client';
+
 import React from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Trophy, RefreshCcw, CheckCircle2, XCircle } from 'lucide-react';
+import { Trophy, RefreshCcw, CheckCircle2, XCircle, Clock, Loader2, CircleCheck, CircleX } from 'lucide-react';
 
 interface ResultsScreenProps {
   score: number;
@@ -9,6 +11,9 @@ interface ResultsScreenProps {
   onRetry: () => void;
   moduleLabel: string;
   moduleTitle: string;
+  userName: string;
+  duration: string;
+  submitStatus: 'idle' | 'submitting' | 'success' | 'error';
   answers: {
     questionNo: number;
     selectedOption: string;
@@ -16,7 +21,17 @@ interface ResultsScreenProps {
   }[];
 }
 
-export const ResultsScreen: React.FC<ResultsScreenProps> = ({ score, totalQuestions, onRetry, moduleLabel, moduleTitle, answers }) => {
+export const ResultsScreen: React.FC<ResultsScreenProps> = ({
+  score,
+  totalQuestions,
+  onRetry,
+  moduleLabel,
+  moduleTitle,
+  userName,
+  duration,
+  submitStatus,
+  answers,
+}) => {
   const percentage = Math.round((score / totalQuestions) * 100);
 
   let resultMessage = '';
@@ -31,6 +46,9 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({ score, totalQuesti
           <Trophy className="w-10 h-10 md:w-12 md:h-12 text-accent" />
         </div>
         <CardTitle className="poppins text-2xl md:text-3xl font-bold">Hasil Evaluasi</CardTitle>
+        {userName && (
+          <p className="poppins text-sm font-semibold text-primary">{userName}</p>
+        )}
         <p className="poppins text-sm md:text-base text-muted-foreground leading-snug">{resultMessage}</p>
       </CardHeader>
 
@@ -47,6 +65,18 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({ score, totalQuesti
             <p className="poppins text-4xl md:text-5xl font-black text-accent mb-1 md:mb-2">{percentage}%</p>
             <p className="poppins text-[10px] md:text-sm font-medium uppercase tracking-wider text-muted-foreground">Akurasi</p>
           </div>
+          {duration && (
+            <>
+              <div className="w-px bg-border"></div>
+              <div className="text-center">
+                <p className="poppins text-4xl md:text-5xl font-black text-muted-foreground mb-1 md:mb-2 flex items-center gap-1">
+                  <Clock className="w-8 h-8 md:w-10 md:h-10 inline" />
+                  <span className="text-2xl md:text-3xl">{duration}</span>
+                </p>
+                <p className="poppins text-[10px] md:text-sm font-medium uppercase tracking-wider text-muted-foreground">Durasi</p>
+              </div>
+            </>
+          )}
         </div>
 
         <div className="w-full space-y-3 mt-4 md:mt-6">
@@ -65,6 +95,27 @@ export const ResultsScreen: React.FC<ResultsScreenProps> = ({ score, totalQuesti
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="w-full mt-6">
+          {submitStatus === 'submitting' && (
+            <div className="flex items-center gap-2 text-sm text-muted-foreground poppins bg-muted/50 px-4 py-2.5 rounded-lg">
+              <Loader2 className="w-4 h-4 animate-spin shrink-0" />
+              Menyimpan hasil ke sistem...
+            </div>
+          )}
+          {submitStatus === 'success' && (
+            <div className="flex items-center gap-2 text-sm text-primary poppins bg-primary/10 px-4 py-2.5 rounded-lg">
+              <CircleCheck className="w-4 h-4 shrink-0" />
+              Hasil berhasil disimpan.
+            </div>
+          )}
+          {submitStatus === 'error' && (
+            <div className="flex items-center gap-2 text-sm text-destructive poppins bg-destructive/10 px-4 py-2.5 rounded-lg">
+              <CircleX className="w-4 h-4 shrink-0" />
+              Gagal menyimpan hasil. Hubungi administrator.
+            </div>
+          )}
         </div>
       </CardContent>
 

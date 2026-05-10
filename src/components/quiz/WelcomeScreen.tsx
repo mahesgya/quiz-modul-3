@@ -1,16 +1,25 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { BookOpen, CheckCircle } from 'lucide-react';
+import { BookOpen, CheckCircle, User } from 'lucide-react';
 
 interface WelcomeScreenProps {
-  onStart: () => void;
+  onStart: (name: string) => void;
   totalQuestions: number;
   moduleLabel: string;
   moduleTitle: string;
 }
 
 export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, totalQuestions, moduleLabel, moduleTitle }) => {
+  const [name, setName] = useState('');
+
+  const handleSubmit = () => {
+    const trimmed = name.trim();
+    if (trimmed) onStart(trimmed);
+  };
+
   return (
     <Card className="w-full max-w-2xl mx-auto mt-8 border-t-4 border-t-primary shadow-lg animate-in fade-in slide-in-from-bottom-4 duration-500">
       <CardHeader className="text-center space-y-4">
@@ -36,10 +45,30 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onStart, totalQues
             <li>Bacalah pembahasan dengan seksama untuk meningkatkan pemahaman Anda.</li>
           </ul>
         </div>
+
+        <div className="space-y-2">
+          <label className="poppins text-sm font-semibold text-foreground flex items-center gap-2">
+            <User className="w-4 h-4 text-primary" />
+            Nama Peserta
+          </label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            onKeyDown={(e) => e.key === 'Enter' && handleSubmit()}
+            placeholder="Masukkan nama lengkap Anda..."
+            className="poppins w-full px-4 py-2.5 rounded-lg border border-input bg-card text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:border-ring transition-colors"
+          />
+        </div>
       </CardContent>
 
       <CardFooter className="flex justify-center pb-8 pt-4">
-        <Button onClick={onStart} size="lg" className="poppins w-full max-w-sm text-lg font-semibold h-12 shadow-md">
+        <Button
+          onClick={handleSubmit}
+          disabled={!name.trim()}
+          size="lg"
+          className="poppins w-full max-w-sm text-lg font-semibold h-12 shadow-md"
+        >
           Mulai Evaluasi
         </Button>
       </CardFooter>
