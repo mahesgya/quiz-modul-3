@@ -15,7 +15,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Google Sheets credentials not configured' }, { status: 500 });
     }
 
-    // Handle both escaped \n (from .env.local) and real newlines (from Vercel dashboard)
     const privateKey = rawKey.includes('\\n') ? rawKey.replace(/\\n/g, '\n') : rawKey;
 
     const auth = new JWT({
